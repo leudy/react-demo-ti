@@ -4,7 +4,7 @@ import logo from "./../logo.svg";
 import "./../App.css";
 import Datatable from "./DataTable";
 import SimpleDataTable from "./SimpleDataTable";
-
+import ProductForm from "./ProductForm";
 // eslint-disable-next-line no-unused-vars
 
 class App extends Component {
@@ -48,6 +48,7 @@ class App extends Component {
           barbers={this.state.barbers}
           rmbarber={this.removeBarber}
         ></SimpleDataTable>
+        <ProductForm></ProductForm>
       </div>
     );
   }
