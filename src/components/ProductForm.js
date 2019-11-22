@@ -29,12 +29,14 @@ class ProductForm extends Component {
 
 	OnSubmitNew = (e) => {
 		e.preventDefault();
-		this.props.addProduct(this.state);
+        this.props.addProduct(this.state);
+        this.props.toggle();
 	};
 
 	onSubmitUpdate = (e) => {
 		e.preventDefault();
-		this.props.updateProduct(this.state);
+        this.props.updateProduct(this.state);
+        this.props.toggle();
 	};
 
 	render() {

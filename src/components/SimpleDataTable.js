@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Table } from "reactstrap";
+import ShowProductForm from './ShowProductForm'
 
 // const TableBody = () => {
 //   return (
@@ -21,13 +22,8 @@ const TableBody = data => {
         <th>{p.id}</th> <td> {p.name}</td> <td> {p.place} </td>{" "}
         <td>{p.rating}</td>
         <td>
-          <button
-            onClick={() => data.removeBarber(p.id)}
-            className="btn btn-primary"
-          >
-            {" "}
-            Eliminar
-          </button>{" "}
+                <button onClick={() => data.removeBarber(p.id)} className="btn btn-danger">Eliminar </button>
+               //TODO: set form here!!!
         </td>
       </tr>
     );
@@ -43,7 +39,8 @@ const TheadTable = () => {
       <tr>
         {" "}
         <th>ID</th> <th> Nombre </th> <th>Lugar</th> <th> Rating </th>{" "}
-        <th>Opción</th>{" "}
+              <th>Opción</th>{" "}
+         
       </tr>{" "}
     </thead>
   );
